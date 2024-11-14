@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <title>number game</title>
+</head>
+<body>
+   
+   <div class="container">
+    <h1>NUMBER GUESSING <br> GAME</h1>
+    <div class="form-group">
+        <label for="choose">Choose difficulty:</label>
+        <select id="choose" required>
+            <option value="easy">Easy (1 - 10)</option>
+            <option value="medium">Medium (1 - 50)</option>
+            <option value="hard">Hard (1 - 100)</option>
+        </select>
+        <br><br>
+        
+        <input type="number" id="userGuess" min="1" placeholder="Enter your guess"><br><br>
+
+        <button id="submit" type="submit">Submit</button><br><br>
+        <button id="replay">Replay</button><br>
+
+        <p id="hint"></p>
+        <p id="attempt"></p>
+    </div>
+</div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
